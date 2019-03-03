@@ -1,3 +1,4 @@
+Attribute VB_Name = "exportModules_"
 Option Compare Database
 
 Public Function exportModules()
@@ -37,4 +38,4 @@ handleError:
     Debug.Print Err.Description
     Exit Function
 
-End Function 
+End Function

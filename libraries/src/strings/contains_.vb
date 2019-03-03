@@ -1,3 +1,4 @@
+Attribute VB_Name = "contains_"
 Option Compare Database
 Option Explicit
 
@@ -8,4 +9,4 @@ Public Function contains(toCheck As String, searchTerm As String) As Boolean
 failGracefully:
     contains = False
     Exit Function
-End Function 
+End Function

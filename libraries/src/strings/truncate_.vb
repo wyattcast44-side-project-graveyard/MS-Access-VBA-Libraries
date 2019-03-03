@@ -1,3 +1,4 @@
+Attribute VB_Name = "truncate_"
 Option Compare Database
 Option Explicit
 
@@ -5,4 +6,4 @@ Public Function truncate(originalStr As String, length As Integer, Optional padd
     
     truncate = Trim(Left(originalStr, length) & paddingString)
     
-End Function 
+End Function

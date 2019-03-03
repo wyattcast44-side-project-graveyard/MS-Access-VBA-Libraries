@@ -1,3 +1,4 @@
+Attribute VB_Name = "properCase_"
 Option Compare Database
 Option Explicit
 
@@ -8,4 +9,4 @@ Public Function properCase(toFix As String) As String
 failGracefully:
     properCase = toFix
     Exit Function
-End Function 
+End Function

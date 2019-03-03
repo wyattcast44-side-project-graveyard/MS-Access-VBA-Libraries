@@ -1,3 +1,4 @@
+Attribute VB_Name = "uppercase_"
 Option Compare Database
 Option Explicit
 
@@ -8,4 +9,4 @@ Public Function upperCase(toFix As String) As String
 failGracefully:
     upperCase = toFix
     Exit Function
-End Function 
+End Function

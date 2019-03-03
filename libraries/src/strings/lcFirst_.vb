@@ -1,3 +1,4 @@
+Attribute VB_Name = "lcFirst_"
 Option Compare Database
 Option Explicit
 
@@ -8,4 +9,4 @@ Public Function lcFirst(toFix As String) As String
 failGracefully:
     lcFirst = toFix
     Exit Function
-End Function 
+End Function

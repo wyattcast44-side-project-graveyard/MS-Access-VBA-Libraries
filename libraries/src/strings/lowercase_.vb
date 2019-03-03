@@ -1,3 +1,4 @@
+Attribute VB_Name = "lowercase_"
 Option Compare Database
 Option Explicit
 
@@ -8,4 +9,4 @@ Public Function lowerCase(toFix As String) As String
 failGracefully:
     lowerCase = toFix
     Exit Function
-End Function 
+End Function
