@@ -2,6 +2,8 @@
 
 This is a collection on standalone libraries for MS Access projects. This is a WIP, I do not suggesting using in any sort of production project at this time.
 
+The basic idea is to pull libraries references into your main project programmatically and automatically. To do this, we can save all libraries as `.accda` files, and place them all in one folder called `libraries`, then when the database is opened, we loop through these libraries and add them as references to your project. 
+
 ## Installation
 
 1. Download the library(ies) that you want to use
@@ -32,8 +34,6 @@ To use any public function defined in the libaries, simpy call them. If there ma
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.
-
-Please make sure to update tests as appropriate.
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
