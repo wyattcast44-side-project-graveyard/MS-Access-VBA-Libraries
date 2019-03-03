@@ -9,6 +9,10 @@ On Error GoTo handleError
     
     Set fileSystem = CreateObject("Scripting.FileSystemObject")
     path = CurrentProject.path & "\src\" & LCase(Replace(CurrentProject.Name, ".accda", "")) & "\"
+    
+    '' Delete all old files
+    Kill path & "*.bas"
+    
     moduleCount = Access.CurrentProject.AllModules.Count
 
     For i = 0 To (moduleCount) - 1
@@ -33,4 +37,5 @@ handleError:
     Debug.Print Err.Description
     Exit Function
 
-End Function 
+End Function
+ 

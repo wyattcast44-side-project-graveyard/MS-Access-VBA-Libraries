@@ -1,7 +1,7 @@
 Option Compare Database
 Option Explicit
 
-Public Function createFolder(path As String, Optional failIfAlreadyExists As Boolean = False, Optional onSuccessCallback As String = "") As Boolean
+Public Function createFolder(path As String, Optional failIfAlreadyExists As Boolean = False) As Boolean
 
 On Error GoTo handleError
     
@@ -22,11 +22,6 @@ On Error GoTo handleError
     Exit Function
 
 handleSuccess:
-    If onSuccessCallback <> "" Then
-        Application.Run onSuccessCallback
-    Else
-        Call fileSystem.handleSuccess
-    End If
     GoTo cleanUp
     Exit Function
 
