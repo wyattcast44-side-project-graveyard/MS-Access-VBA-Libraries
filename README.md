@@ -1,6 +1,6 @@
 # MS Access Libraries
 
-This is a collection of standalone libraries for MS Access projects. This is a WIP, I do not suggesting using in any sort of production project at this time.
+This is a collection of standalone VBA libraries for MS Access projects. This is a WIP, I do not suggesting using in any sort of production project at this time.
 
 The basic idea is to pull libraries references into your main project programmatically and automatically. To do this, we can save all libraries as `.accda` files, and place them all in a folder called `libraries`, then when the database is opened, we loop through these libraries and add them as references to your project. 
 
@@ -36,6 +36,9 @@ To use any public function defined in the libaries, simpy call them. If there ma
 
 ## Current Libraries
 
+### Auth
+The Auth library will provide an flexible, easy to use, authentication system for controlling access to your database.
+
 ### Env
 The Env library provides easy access to various windows enviroment paths/values.
 
@@ -44,6 +47,9 @@ The Filesystem library provides easy to use methods for common filesystem tasks 
 
 ### Logger
 The Logger library will provide easy to use and configure methods to log errors and activity in your database.
+
+### Middleware
+The Middleware library will provide an flexible, easy to use, authorization system for managing roles and permission for your database.
 
 ### Outlook
 The Outlook library will provide easy to use and configure methods to perform common tasks in MS Outlook.
@@ -62,3 +68,6 @@ I'd love to hear your thoughts on this proposed architecture, reach out to me on
 
 ## License
 [MIT](https://choosealicense.com/licenses/mit/)
+
+## Good Resources
+- [MS Access SQL Reference](https://docs.microsoft.com/en-us/office/client-developer/access/desktop-database-reference/microsoft-access-sql-reference)
