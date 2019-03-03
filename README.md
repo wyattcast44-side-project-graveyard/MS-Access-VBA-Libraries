@@ -4,6 +4,8 @@ This is a collection on standalone libraries for MS Access projects. This is a W
 
 The basic idea is to pull libraries references into your main project programmatically and automatically. To do this, we can save all libraries as `.accda` files, and place them all in one folder called `libraries`, then when the database is opened, we loop through these libraries and add them as references to your project. 
 
+This keeps your main application clean and only having the business login unique to your project.
+
 ## Installation
 
 1. Download the library(ies) that you want to use
