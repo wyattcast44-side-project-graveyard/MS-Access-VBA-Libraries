@@ -4,7 +4,7 @@ This is a collection of standalone VBA libraries for MS Access projects. This is
 
 The basic idea is to pull libraries references into your main project programmatically and automatically. To do this, we can save all libraries as `.accda` files, and place them all in a folder called `libraries`, then when the database is opened, we loop through these libraries and add them as references to your project. 
 
-This keeps your main application clean, with only the business logic unique to your project while still benefiting from useful libraries of code. This is, in my opinion, a much better option than copying and pasting random code into your project.
+This keeps your main application clean, with only the business logic unique to your project while still benefiting from useful, reusable, libraries of code. This is, in my opinion, a much better option than copying and pasting random code into your project.
 
 ## Installation
 
@@ -44,6 +44,9 @@ The Env library provides easy access to various windows enviroment paths/values.
 
 ### Filesystem
 The Filesystem library provides easy to use methods for common filesystem tasks such as creating/deleting files/folders.
+
+### Http
+The Http library will provide easy to use methods for performing HTTP requests, and handling responses.
 
 ### Logger
 The Logger library will provide easy to use and configure methods to log errors and activity in your database.
