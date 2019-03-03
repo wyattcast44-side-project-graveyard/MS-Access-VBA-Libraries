@@ -1,3 +1,4 @@
+Attribute VB_Name = "createFolder_"
 Option Compare Database
 Option Explicit
 
@@ -41,4 +42,4 @@ End Function
 
 Public Function test()
     Debug.Print "Custom cb"
-End Function 
+End Function

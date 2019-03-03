@@ -1,3 +1,4 @@
+Attribute VB_Name = "handleError_"
 Option Compare Database
 Option Explicit
 
@@ -5,4 +6,4 @@ Public Function handleError(errorNum As Variant, errDesc As Variant, Optional fu
     '
     ' Handle your errors here
     '
-End Function 
+End Function

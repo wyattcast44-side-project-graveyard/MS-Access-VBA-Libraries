@@ -1,7 +1,8 @@
+Attribute VB_Name = "driveExists_"
 Option Compare Database
 Option Explicit
 
-Public Function folderExists(path As String) As Boolean
+Public Function driveExists(path As String) As Boolean
 
 On Error GoTo handleError
     
@@ -9,7 +10,7 @@ On Error GoTo handleError
     Set FSO = CreateObject("Scripting.FileSystemObject")
     
     If path <> "" Then
-        folderExists = FSO.folderExists(path)
+        driveExists = FSO.driveExists(path)
     End If
 
     GoTo handleSuccess
@@ -19,13 +20,13 @@ handleSuccess:
     Call fileSystem.handleSuccess
     GoTo cleanUp
     Exit Function
-    
+
 handleError:
-    Call fileSystem.handleError(Err.Number, Err.Description, "folderExists()", path)
+    Call fileSystem.handleError(Err.Number, Err.Description, "driveExists()", path)
     GoTo cleanUp
 
 cleanUp:
     Set FSO = Nothing
     Exit Function
 
-End Function 
+End Function

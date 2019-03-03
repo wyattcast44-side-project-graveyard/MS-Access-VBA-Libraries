@@ -1,3 +1,4 @@
+Attribute VB_Name = "deleteFolder_"
 Option Compare Database
 Option Explicit
 
@@ -37,4 +38,4 @@ cleanUp:
     Set FSO = Nothing
     Exit Function
 
-End Function 
+End Function

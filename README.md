@@ -4,7 +4,7 @@ This is a collection of standalone libraries for MS Access projects. This is a W
 
 The basic idea is to pull libraries references into your main project programmatically and automatically. To do this, we can save all libraries as `.accda` files, and place them all in a folder called `libraries`, then when the database is opened, we loop through these libraries and add them as references to your project. 
 
-This keeps your main application clean, with only the business logic unique to your project while still benifitting from useful libraries of code. This is, in my opinion, a much better option than copying and pasting random function into your project.
+This keeps your main application clean, with only the business logic unique to your project while still benefiting from useful libraries of code. This is, in my opinion, a much better option than copying and pasting random code into your project.
 
 ## Installation
 
@@ -47,6 +47,12 @@ The Logger library will provide easy to use and configure methods to log errors 
 
 ### Outlook
 The Outlook library will provide easy to use and configure methods to perform common tasks in MS Outlook.
+
+### SQL
+The SQL library will provide easy to use and configure methods to perform SQL tasks (inserts, deletes, etc) in VBA for your database.
+
+### SourceControl
+The SourceControl library provides an easy way to export all VBA modules in your database(s) for checking into source control. For an example, the `src` files in this repo were exported from their respective databases using the SourceControl library. This library is mainly to aide in the maintenance of this repo, but you may find a use for it.
 
 ## Contributing
 Pull requests are welcome. For major changes, please open an issue first to discuss what you would like to change.

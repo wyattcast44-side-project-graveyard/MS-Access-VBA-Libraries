@@ -1,3 +1,4 @@
+Attribute VB_Name = "readme"
 Option Compare Database
 Option Explicit
 
@@ -15,4 +16,4 @@ Option Explicit
 ' ERRORS
 ' - Each method in the library handles errors by calling the handleError() method, you are free to hook into
 '   this handleError() method to handle all errors however you want :)
- 
+

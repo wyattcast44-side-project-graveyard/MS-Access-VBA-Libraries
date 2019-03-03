@@ -1,3 +1,4 @@
+Attribute VB_Name = "queryExists_"
 Option Compare Database
 Option Explicit
 
@@ -15,4 +16,4 @@ Public Function queryExists(qryName As String) As Boolean
     Next
     
 End Function
- 
+
