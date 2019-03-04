@@ -2,11 +2,22 @@ Attribute VB_Name = "contains_"
 Option Compare Database
 Option Explicit
 
-Public Function contains(toCheck As String, searchTerm As String) As Boolean
-    On Error GoTo failGracefully
-        contains = IIf(InStr(toCheck, searchTerm) <> 0, True, False)
-        Exit Function
-failGracefully:
+Public Function contains(toCheck As String, ParamArray searchTerms()) As Boolean
+        
+    Dim term As Variant
+    
     contains = False
+    
+    For Each term In searchTerms
+        If InStr(toCheck, term) <> 0 Then
+            GoTo doesContainString
+        End If
+    Next
+    
     Exit Function
+       
+doesContainString:
+    contains = True
+    Exit Function
+    
 End Function
