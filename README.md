@@ -6,6 +6,15 @@ The basic idea is to pull libraries references into your main project programmat
 
 This keeps your main application clean, with only the business logic unique to your project while still benefiting from useful, reusable, libraries of code. This is, in my opinion, a much better option than copying and pasting random code into your project.
 
+### Update (Mar 04 19)
+
+First time installing the project at work. Attempted to use the flow as intented, realized a huge flaw in the plan. Your all probably familiar with the "Enable Content" popup for enabling VBA/Macros that end users must select in order for your code to run. The problem with the "seperate" libraries is, Access requires that users enable code for all libraries. I knew this, but when developing locally and actively editing the source files it totally slipped my mind.
+
+This may, or may not, be a big issue for your use case. For me, the applications I would be builing have upwards of 30 users, many of which I will never meet. So it is not really a viable option to have end users enable all these libaries. 
+
+My thought at the moment is to create the ability for developers to "build" the production database, this process would involve importing all used code into the primary database when getting ready to release the database. But until I flesh this idea out more, I will be putting this project on a temporary hold. 
+
+
 ## Installation
 
 1. Download the library(ies) that you want to use
